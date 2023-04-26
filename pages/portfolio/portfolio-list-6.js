@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const PortfolioFilterSix = dynamic(
   () => import("@/components/portfolio/PortfolioFilterSix"),
@@ -10,6 +11,22 @@ const PortfolioFilterSix = dynamic(
 );
 
 export default function Portfolio6() {
+  const [data, setData] = useState(null);
+  const [isLoading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch(
+      "http://localhost:1337/api/categories?populate[arts][populate][0]=tags"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+        console.log(data);
+      });
+  }, []);
+
   return (
     <>
       <Layout footerLayout={11}>
