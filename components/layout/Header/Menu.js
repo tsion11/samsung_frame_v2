@@ -128,7 +128,7 @@ export default function Menu({ navColor }) {
               </ul>
             </li> */}
             <li className={`${navColor} menu-item-has-children -has-mega-menu`}>
-              <Link href="/portfolio/portfolio-list-6">Gallery</Link>
+              <Link href="/art">Gallery</Link>
               {/* <div className="mega">
                 <div className="mega__menu">
                   <div className="d-flex">
