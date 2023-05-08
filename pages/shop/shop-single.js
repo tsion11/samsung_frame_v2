@@ -1,5 +1,6 @@
 import QuantityInput from "@/components/elements/QuantityInput";
 import Layout from "@/components/layout/Layout";
+import Link from "next/link";
 import { useState } from "react";
 
 import * as Icon from "react-feather";
@@ -22,7 +23,7 @@ export default function ShopSingle() {
                     <div className="shopSingle-preview__image js-slider-slider">
                       <div className="swiper-wrapper">
                         <div className="swiper-slide">
-                          <a
+                          <Link
                             href="img/shop/products/1.jpg"
                             className="gallery__item js-gallery"
                             data-gallery="gallery1"
@@ -34,10 +35,10 @@ export default function ShopSingle() {
                                 alt="project image"
                               />
                             </div>
-                          </a>
+                          </Link>
                         </div>
                         {/* <div className="swiper-slide">
-                          <a
+                          <Link
                             href="img/shop/products/2.jpg"
                             className="gallery__item js-gallery"
                             data-gallery="gallery1"
@@ -49,10 +50,10 @@ export default function ShopSingle() {
                                 alt="project image"
                               />
                             </div>
-                          </a>
+                          </Link>
                         </div> */}
                         {/* <div className="swiper-slide">
-                          <a
+                          <Link
                             href="img/shop/products/3.jpg"
                             className="gallery__item js-gallery"
                             data-gallery="gallery1"
@@ -64,10 +65,10 @@ export default function ShopSingle() {
                                 alt="project image"
                               />
                             </div>
-                          </a>
+                          </Link>
                         </div> */}
                         {/* <div className="swiper-slide">
-                          <a
+                          <Link
                             href="img/shop/products/4.jpg"
                             className="gallery__item js-gallery"
                             data-gallery="gallery1"
@@ -79,7 +80,7 @@ export default function ShopSingle() {
                                 alt="project image"
                               />
                             </div>
-                          </a>
+                          </Link>
                         </div> */}
                       </div>
                     </div>
@@ -384,44 +385,44 @@ export default function ShopSingle() {
                         alt="Product image"
                       />
                       <div className="absolute-full-center d-flex justify-center items-end py-20 px-20 opac-0 | t-base hg:opacity-100">
-                        <a
+                        <Link
                           href="#"
                           className="size-40 rounded-full bg-white d-flex justify-center items-center text-black | t-base h:bg-dark-1 h:text-white"
                         >
                           <Icon.Eye className="icon size-20" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="#"
                           className="size-40 rounded-full bg-white d-flex justify-center items-center ml-10 text-black | t-base h:bg-dark-1 h:text-white"
                         >
                           <Icon.Heart className="icon size-20" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="shopCard__content mt-20">
                       <div>
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Cartoon
-                        </a>
+                        </Link>
                         ,
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Colored
-                        </a>
+                        </Link>
                         ,
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Illustration
-                        </a>
+                        </Link>
                       </div>
                       <h4 className="text-16 fw-600 mt-8">Two Faced</h4>
                       <div className="text-16 fw-600 text-accent mt-4">
                         $55.00
                       </div>
-                      <a
+                      <Link
                         href="#"
                         className="button -md text-dark-1 -outline-dark-accent -uppercase mt-10"
                       >
                         Details
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -434,44 +435,44 @@ export default function ShopSingle() {
                         alt="Product image"
                       />
                       <div className="absolute-full-center d-flex justify-center items-end py-20 px-20 opac-0 | t-base hg:opacity-100">
-                        <a
+                        <Link
                           href="#"
                           className="size-40 rounded-full bg-white d-flex justify-center items-center text-black | t-base h:bg-dark-1 h:text-white"
                         >
                           <Icon.Eye className="icon size-20" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="#"
                           className="size-40 rounded-full bg-white d-flex justify-center items-center ml-10 text-black | t-base h:bg-dark-1 h:text-white"
                         >
                           <Icon.Heart className="icon size-20" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="shopCard__content mt-20">
                       <div>
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Photo-realistic
-                        </a>
+                        </Link>
                         ,
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           HD
-                        </a>
+                        </Link>
                         ,
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Colored
-                        </a>
+                        </Link>
                       </div>
                       <h4 className="text-16 fw-600 mt-8">Fish Drop</h4>
                       <div className="text-16 fw-600 text-accent mt-4">
                         $55.00
                       </div>
-                      <a
+                      <Link
                         href="#"
                         className="button -md text-dark-1 -outline-dark-accent -uppercase mt-10"
                       >
                         Details
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -484,44 +485,44 @@ export default function ShopSingle() {
                         alt="Product image"
                       />
                       <div className="absolute-full-center d-flex justify-center items-end py-20 px-20 opac-0 | t-base hg:opacity-100">
-                        <a
+                        <Link
                           href="#"
                           className="size-40 rounded-full bg-white d-flex justify-center items-center text-black | t-base h:bg-dark-1 h:text-white"
                         >
                           <Icon.Eye className="icon size-20" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="#"
                           className="size-40 rounded-full bg-white d-flex justify-center items-center ml-10 text-black | t-base h:bg-dark-1 h:text-white"
                         >
                           <Icon.Heart className="icon size-20" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="shopCard__content mt-20">
                       <div>
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Photo-realistic
-                        </a>
+                        </Link>
                         ,
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           HD
-                        </a>
+                        </Link>
                         ,
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Colored
-                        </a>
+                        </Link>
                       </div>
                       <h4 className="text-16 fw-600 mt-8">Lioness</h4>
                       <div className="text-16 fw-600 text-accent mt-4">
                         $55.00
                       </div>
-                      <a
+                      <Link
                         href="/shop/shop-single-1"
                         className="button -md text-dark-1 -outline-dark-accent -uppercase mt-10"
                       >
                         Details
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -534,44 +535,44 @@ export default function ShopSingle() {
                         alt="Product image"
                       />
                       <div className="absolute-full-center d-flex justify-center items-end py-20 px-20 opac-0 | t-base hg:opacity-100">
-                        <a
+                        <Link
                           href="#"
                           className="size-40 rounded-full bg-white d-flex justify-center items-center text-black | t-base h:bg-dark-1 h:text-white"
                         >
                           <Icon.Eye className="icon size-20" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="#"
                           className="size-40 rounded-full bg-white d-flex justify-center items-center ml-10 text-black | t-base h:bg-dark-1 h:text-white"
                         >
                           <Icon.Heart className="icon size-20" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="shopCard__content mt-20">
                       <div>
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Photo-realistic
-                        </a>
+                        </Link>
                         ,
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           HD
-                        </a>
+                        </Link>
                         ,
-                        <a href="#" className="decoration-none">
+                        <Link href="#" className="decoration-none">
                           Colored
-                        </a>
+                        </Link>
                       </div>
                       <h4 className="text-16 fw-600 mt-8">Skull Beauty</h4>
                       <div className="text-16 fw-600 text-accent mt-4">
                         $55.00
                       </div>
-                      <a
+                      <Link
                         href="#"
                         className="button -md text-dark-1 -outline-dark-accent -uppercase mt-10"
                       >
                         Details
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

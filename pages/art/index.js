@@ -19,7 +19,7 @@ export default function Portfolio1() {
 
   const getCategories = () => {
     fetch(
-      "http://localhost:1337/api/categories?fields[1]=name&populate[arts][populate][1]=tags&populate[arts][populate][2]=pictures"
+      "https://api.samsungframe.art/api/categories?fields[1]=name&populate[arts][populate][1]=tags&populate[arts][populate][2]=pictures"
     )
       .then((res) => res.json())
       .then((data) => {
