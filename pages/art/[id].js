@@ -4,9 +4,8 @@ import { useState } from "react";
 import * as Icon from "react-feather";
 import { useEffect } from "react";
 import Link from "next/link";
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function ArtDetail() {
   const router = useRouter();
@@ -21,21 +20,24 @@ export default function ArtDetail() {
   }, [id]);
 
   const getArt = () => {
-    fetch(`http://localhost:1337/api/arts/${id}?populate=*`)
+    fetch(`https://api.samsungframe.art/api/arts/${id}?populate=*`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        getCategory(data?.data?.attributes.category.data.id)
+        getCategory(data?.data?.attributes.category.data.id);
         setLoading(false);
       });
   };
 
   const getCategory = (id) => {
-    fetch(`http://localhost:1337/api/categories/${id}?populate=*`)
+    fetch(
+      `https://api.samsungframe.art/api/categories/${id}?fields[1]=name&populate[arts][populate][1]=tags&populate[arts][populate][2]=pictures`
+    )
       .then((res) => res.json())
       .then((data) => {
         setCategory(data);
         // setLoading(false);
+        console.log(data);
       });
   };
 
@@ -68,7 +70,7 @@ export default function ArtDetail() {
                             <div className="ratio ratio-62:60">
                               <img
                                 className="absolute-full-center rounded-8 object-fit-cover"
-                                src={`http://localhost:1337${data?.data?.attributes.pictures.data[1].attributes.url}`}
+                                src={`https://api.samsungframe.art${data?.data?.attributes.pictures.data[1].attributes.url}`}
                                 alt="project image"
                               />
                             </div>
@@ -155,12 +157,14 @@ export default function ArtDetail() {
                 </div>
                 <div className="col-lg-6">
                   <div className="pl-40 pb-80 lg:pl-0 md:pb-0">
-                    <h2 className="text-32 mt-4">{data?.data?.attributes.title}</h2>
-                    <div className="text-xl fw-600 text-accent mt-12">${data?.data?.attributes.price}</div>
+                    <h2 className="text-32 mt-4">
+                      {data?.data?.attributes.title}
+                    </h2>
+                    <div className="text-xl fw-600 text-accent mt-12">
+                      ${data?.data?.attributes.price}
+                    </div>
                     <div className="mt-30">
-                      <p>
-                        {data?.data?.attributes.small_desc}
-                      </p>
+                      <p>{data?.data?.attributes.small_desc}</p>
                     </div>
                     {/* <div className="shopSingle-info__action row x-gap-20 y-gap-24 pt-30">
                       <div className="col-auto">
@@ -173,7 +177,7 @@ export default function ArtDetail() {
                       </div>
                     </div> */}
                     <div className="pt-30">
-                    <Link
+                      <Link
                         href={`${data?.data?.attributes.linktoart}`}
                         target="_blank"
                         className="button -md text-dark-1 -outline-dark-accent -uppercase mt-10"
@@ -182,8 +186,16 @@ export default function ArtDetail() {
                       </Link>
                     </div>
                     <div className="pt-30">
-                      <p>Category: {data?.data?.attributes.category.data.attributes.name}</p>
-                      <p>Tags: {data?.data?.attributes.tags.data.map(tag => tag.attributes.name).join(", ")}</p>
+                      <p>
+                        Category:{" "}
+                        {data?.data?.attributes.category.data.attributes.name}
+                      </p>
+                      <p>
+                        Tags:{" "}
+                        {data?.data?.attributes.tags.data
+                          .map((tag) => tag.attributes.name)
+                          .join(", ")}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -229,8 +241,12 @@ export default function ArtDetail() {
                               {/* <h4 className="text-xl fw-600">
                                 Description
                               </h4> */}
-                      
-                              <ReactMarkdown linkTarget="_blank"  children={desc} remarkPlugins={[remarkGfm]}    />
+
+                              <ReactMarkdown
+                                linkTarget="_blank"
+                                children={desc}
+                                remarkPlugins={[remarkGfm]}
+                              />
                             </div>
                           </div>
                         </div>
@@ -244,8 +260,12 @@ export default function ArtDetail() {
                               {/* <h4 className="text-xl fw-600">
                                 Description
                               </h4> */}
-                      
-                              <ReactMarkdown linkTarget="_blank"  children={instruction} remarkPlugins={[remarkGfm]}    />
+
+                              <ReactMarkdown
+                                linkTarget="_blank"
+                                children={instruction}
+                                remarkPlugins={[remarkGfm]}
+                              />
                             </div>
                           </div>
                         </div>
@@ -262,63 +282,66 @@ export default function ArtDetail() {
                 <div className="col-auto">
                   <div className="sectionHeading ">
                     <div className="sectionHeading__subtitle">
-                      <span>Keep reading...</span>
+                      {/* <span>Related Arts</span> */}
                     </div>
                     <h2 className="sectionHeading__title">You may also like</h2>
                   </div>
                 </div>
               </div>
               <div className="row y-gap-32 pt-60 sm:pt-40">
-                {category && category.data?.attributes.arts.data.map((art) => (<div key={art.id} className="col-lg-3 col-sm-6">
-                  <div className="text-center">
-                    <div className="ratio ratio-27:30 hover-group">
-                      <img
-                        className="absolute-full-center rounded-8 object-fit-cover"
-                        src="/img/portfolio/cards/d.jpg"
-                        alt="Product image"
-                      />
-                      <div className="absolute-full-center d-flex justify-center items-end py-20 px-20 opac-0 | t-base hg:opacity-100">
-                        <a
-                          href="#"
-                          className="size-40 rounded-full bg-white d-flex justify-center items-center text-black | t-base h:bg-dark-1 h:text-white"
-                        >
-                          <Icon.Eye className="icon size-20" />
-                        </a>
-                        <a
-                          href="#"
-                          className="size-40 rounded-full bg-white d-flex justify-center items-center ml-10 text-black | t-base h:bg-dark-1 h:text-white"
-                        >
-                          <Icon.Heart className="icon size-20" />
-                        </a>
+                {category &&
+                  category.data?.attributes.arts.data.map((art) => (
+                    <div
+                      key={art.attributes.category}
+                      className="col-lg-3 col-sm-6"
+                    >
+                      <div className="text-center">
+                        <div className="ratio ratio-27:30 hover-group">
+                          <img
+                            className="absolute-full-center rounded-8 object-fit-cover"
+                            src={`https://api.samsungframe.art${art?.attributes.pictures.data[1].attributes.url}`}
+                            alt="Product image"
+                          />
+                          <div className="absolute-full-center d-flex justify-center items-end py-20 px-20 opac-0 | t-base hg:opacity-100">
+                            <a
+                              href="#"
+                              className="size-40 rounded-full bg-white d-flex justify-center items-center text-black | t-base h:bg-dark-1 h:text-white"
+                            >
+                              <Icon.Eye className="icon size-20" />
+                            </a>
+                            <a
+                              href="#"
+                              className="size-40 rounded-full bg-white d-flex justify-center items-center ml-10 text-black | t-base h:bg-dark-1 h:text-white"
+                            >
+                              <Icon.Heart className="icon size-20" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="shopCard__content mt-20">
+                          <div>
+                            {art?.attributes.tags.data.map((tag) => (
+                              <a href="#" className="decoration-none">
+                                {tag.attributes.name},
+                              </a>
+                            ))}
+                            
+                          </div>
+                          <h4 className="text-16 fw-600 mt-8">
+                            {art.attributes.title}
+                          </h4>
+                          <div className="text-16 fw-600 text-accent mt-4">
+                            ${art.attributes.price}
+                          </div>
+                          <Link
+                            href={`/art/${art.id}`}
+                            className="button -md text-dark-1 -outline-dark-accent -uppercase mt-10"
+                          >
+                            Details
+                          </Link>
+                        </div>
                       </div>
                     </div>
-                    <div className="shopCard__content mt-20">
-                      <div>
-                        <a href="#" className="decoration-none">
-                          Cartoon
-                        </a>
-                        ,
-                        <a href="#" className="decoration-none">
-                          Colored
-                        </a>
-                        ,
-                        <a href="#" className="decoration-none">
-                          Illustration
-                        </a>
-                      </div>
-                      <h4 className="text-16 fw-600 mt-8">{art.attributes.title}</h4>
-                      <div className="text-16 fw-600 text-accent mt-4">
-                        ${art.attributes.price}
-                      </div>
-                      <Link
-                        href={`/art/${art.id}`}
-                        className="button -md text-dark-1 -outline-dark-accent -uppercase mt-10"
-                      >
-                        Details
-                      </Link>
-                    </div>
-                  </div>
-                </div>))}
+                  ))}
               </div>
             </div>
           </section>
