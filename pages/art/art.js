@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import Isotope from "isotope-layout";
+// import Isotope from "isotope-layout";
 import * as Icon from "react-feather";
 import Link from "next/link";
 
@@ -8,22 +8,22 @@ export default function Art({ data, loading }) {
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
 
-  useEffect(() => {
-    setTimeout(() => {
-      isotope.current = new Isotope(".works-row", {
-        itemSelector: ".masonry__item",
-        percentPosition: true,
-        masonry: {
-          columnWidth: ".masonry__item",
-        },
-        animationOptions: {
-          duration: 750,
-          easing: "linear",
-          queue: false,
-        },
-      });
-    }, 0);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     isotope.current = new Isotope(".works-row", {
+  //       itemSelector: ".masonry__item",
+  //       percentPosition: true,
+  //       masonry: {
+  //         columnWidth: ".masonry__item",
+  //       },
+  //       animationOptions: {
+  //         duration: 750,
+  //         easing: "linear",
+  //         queue: false,
+  //       },
+  //     });
+  //   }, 0);
+  // }, []);
   // useEffect(() => {
   //   if (isotope.current) {
   //     filterKey === "*"
@@ -108,7 +108,7 @@ export default function Art({ data, loading }) {
                       <div className="relative z-2">
                         <div className="x-gap-10 y-gap-10">
                           {d?.attributes.tags?.data?.map((tag) => (
-                            <a href="#" className="decoration-none text-white">
+                            <a href="#" key={tag.id} className="decoration-none text-white">
                               #{tag?.attributes.name}{" "}
                             </a>
                           ))}

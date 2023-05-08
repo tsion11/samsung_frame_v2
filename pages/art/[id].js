@@ -17,6 +17,7 @@ export default function ArtDetail() {
   useEffect(() => {
     setLoading(true);
     getArt();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const getArt = () => {
@@ -244,6 +245,7 @@ export default function ArtDetail() {
 
                               <ReactMarkdown
                                 linkTarget="_blank"
+                                // eslint-disable-next-line react/no-children-prop
                                 children={desc}
                                 remarkPlugins={[remarkGfm]}
                               />
@@ -263,6 +265,7 @@ export default function ArtDetail() {
 
                               <ReactMarkdown
                                 linkTarget="_blank"
+                                // eslint-disable-next-line react/no-children-prop
                                 children={instruction}
                                 remarkPlugins={[remarkGfm]}
                               />
@@ -320,11 +323,10 @@ export default function ArtDetail() {
                         <div className="shopCard__content mt-20">
                           <div>
                             {art?.attributes.tags.data.map((tag) => (
-                              <a href="#" className="decoration-none">
+                              <a href="#" key={tag.id} className="decoration-none">
                                 {tag.attributes.name},
                               </a>
                             ))}
-                            
                           </div>
                           <h4 className="text-16 fw-600 mt-8">
                             {art.attributes.title}
