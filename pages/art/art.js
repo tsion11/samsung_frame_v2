@@ -2,12 +2,20 @@ import { useCallback, useEffect, useRef, useState } from "react";
 // import Isotope from "isotope-layout";
 import * as Icon from "react-feather";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Art({ data, loading }) {
   // console.log(art?.data[0].attributes?.pictures?.data[0].attributes.url);
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
-
+  const router = useRouter();
+  console.log(router.query);
+  useEffect(() => {
+    if (router.query.category) {
+      console.log(router.query);
+      setFilterKey(parseInt(router.query.category));
+    }
+  }, []);
   // useEffect(() => {
   //   setTimeout(() => {
   //     isotope.current = new Isotope(".works-row", {
@@ -83,7 +91,7 @@ export default function Art({ data, loading }) {
         <div className="container">
           <div className="row  masonry -gap-32 pt-60 sm:pt-40 js-masonry js-masonry-no-filter">
             <div className="masonry__sizer" />
-            {filteredData().map((d) => (
+            {filteredData()?.map((d) => (
               <div
                 key={d.id}
                 className="masonry__item col-sm-4 col-6 col-md-6`"
@@ -108,7 +116,11 @@ export default function Art({ data, loading }) {
                       <div className="relative z-2">
                         <div className="x-gap-10 y-gap-10">
                           {d?.attributes.tags?.data?.map((tag) => (
-                            <a href="#" key={tag.id} className="decoration-none text-white">
+                            <a
+                              href="#"
+                              key={tag.id}
+                              className="decoration-none text-white"
+                            >
                               #{tag?.attributes.name}{" "}
                             </a>
                           ))}
