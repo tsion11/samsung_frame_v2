@@ -1,38 +1,34 @@
 import Layout from "@/components/layout/Layout";
-import AboutOne from "@/components/sections/homepage/AboutOne";
-import AppOne from "@/components/sections/homepage/AppOne";
-import BenefitsOne from "@/components/sections/homepage/BenefitsOne";
+import BlogOne from "@/components/sections/homepage/BlogOne";
 import ClientOne from "@/components/sections/homepage/ClientOne";
-import CounterOne from "@/components/sections/homepage/CounterOne";
-import CtaOne from "@/components/sections/homepage/CtaOne";
-import FaqOne from "@/components/sections/homepage/FaqOne";
-import FeatureOne from "@/components/sections/homepage/FeatureOne";
-import HeroOne from "@/components/sections/homepage/HeroOne";
-import PricingOne from "@/components/sections/homepage/PricingOne";
-import SuccessOne from "@/components/sections/homepage/SuccessOne";
-import TestimonialOne from "@/components/sections/homepage/TestimonialOne";
+import CounterTwo from "@/components/sections/homepage/CounterTwo";
+import CreativeProcessOne from "@/components/sections/homepage/CreativeProcessOne";
+import CtaFive from "@/components/sections/homepage/CtaFive";
+import FeatureNine from "@/components/sections/homepage/FeatureNine";
+import HeroEight from "@/components/sections/homepage/HeroEight";
+import ProjectOne from "@/components/sections/homepage/ProjectOne";
+import ServiceSeven from "@/components/sections/homepage/ServiceSeven";
+import TestimonialSeven from "@/components/sections/homepage/TestimonialSeven";
 
-export default function Home1() {
+export default function Home9() {
   return (
     <>
       <Layout
-        headerLayout={1}
-        footerLayout={1}
-        logo="logo" // logo, logo-flat, logo-5
-        verticalLine // if vertical line true, show vertical line show
+        headerLayout={9}
+        footerLayout={9}
+        navColor="" // text-white, "" (blank is default dark)
+        logo="logo-flat" // logo, logo-flat, logo-5
       >
-        <HeroOne bgPath="home-1/masthead" />
-        <ClientOne />
-        <AboutOne />
-        <BenefitsOne />
-        <SuccessOne />
-        <FeatureOne />
-        <TestimonialOne />
-        <CounterOne />
-        <AppOne />
-        <PricingOne />
-        <FaqOne />
-        <CtaOne />
+        <HeroEight />
+        {/* <ServiceSeven /> */}
+        <FeatureNine />
+        {/* <CounterTwo /> */}
+        {/* <ProjectOne /> */}
+        {/* <CreativeProcessOne /> */}
+        {/* <TestimonialSeven /> */}
+        {/* <ClientOne /> */}
+        {/* <BlogOne /> */}
+        {/* <CtaFive /> */}
       </Layout>
     </>
   );

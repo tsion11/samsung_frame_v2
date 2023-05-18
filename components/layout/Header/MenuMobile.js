@@ -55,10 +55,10 @@ export default function MenuMobile({ navToggled }) {
                   className="submenu-expand"
                   onClick={() => navHandleMobile(1)}
                 >
-                  <Icon.Plus className="icon ml-12" />
+                  {/* <Icon.Plus className="icon ml-12" /> */}
                 </div>
               </Link>
-              <ul
+              {/* <ul
                 className={`nav__submenu submenu-two-column ${
                   navToggledMobileSubmenu.key == 1 ? "is-list-displayed" : ""
                 }`}
@@ -93,7 +93,7 @@ export default function MenuMobile({ navToggled }) {
                 <li className="nav__submenu_item">
                   <Link href="/home/home-10">Home 10</Link>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             {/* <li
               className={`menu-item-has-children ${

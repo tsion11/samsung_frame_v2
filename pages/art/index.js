@@ -69,21 +69,20 @@ export default function Portfolio1() {
                 <div className="col-auto">
                   <div className="sectionHeading ">
                     <h2 className="sectionHeading__title">
-                      We help startups launch and succeed very fast
+                      We create superior art for your Samsung Frame
                     </h2>
                     <p className="sectionHeading__text mt-20">
-                      We appreciate your trust greatly! Our clients choose us
-                      and our products
-                      <br className="md:d-none" /> because they know we are the
-                      best.
+                      Add a touch of elegance to your home with our art,
+                      <br className="md:d-none" /> perfectly suited for the
+                      Samsung Frame.
                     </p>
                   </div>
-                  <Link
+                  {/* <Link
                     href="/contact/contact-2"
                     className="button -md -accent text-white mt-40 md:mt-30"
                   >
                     Get Started
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
