@@ -32,7 +32,7 @@ export default function Footer2() {
                         Need live support?
                       </div>
                       <div className="text-xl fw-600 text-white">
-                        hi@sassio.com
+                        hi@sassio
                       </div>
                     </div>
                   </div>
