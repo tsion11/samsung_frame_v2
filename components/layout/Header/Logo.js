@@ -7,7 +7,7 @@ export default function Logo({ logo }) {
                 <Link className="base-logo" href="/">
                     <img
                         className="base-logo-first"
-                        src={`/img/general/${logo ? logo : "logo"}.svg`}
+                        src={`/img/general/${logo ? logo : "logo"}.png`}
                         alt="logo"
                     />
                     <img

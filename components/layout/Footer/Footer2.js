@@ -16,7 +16,7 @@ export default function Footer2() {
               <div className="col-lg-4 col-sm-6">
                 <div className="footer__item">
                   <div className="footer__logo  text-white">
-                    <img src="/img/general/logo-flat.svg" alt="logo" />
+                    <img src="/img/general/-flat.svg" alt="logo" />
                   </div>
                   <div className="y-gap-32 pt-30">
                     <div className="">
@@ -31,9 +31,7 @@ export default function Footer2() {
                       <div className="text-lg text-white opac-50">
                         Need live support?
                       </div>
-                      <div className="text-xl fw-600 text-white">
-                        hi@sassio
-                      </div>
+                      <div className="text-xl fw-600 text-white">hi@sassio</div>
                     </div>
                   </div>
                 </div>

@@ -115,14 +115,14 @@ export default function Footer9() {
                       Legal
                     </h3>
                     <div className="footer__content y-gap-10 mt-40">
-                      <div className="footer__content__item">
+                      {/* <div className="footer__content__item">
                         <Link
                           className="decoration-none text-white"
                           href="terms"
                         >
                           Twitter
                         </Link>
-                      </div>
+                      </div> */}
                       <div className="footer__content__item">
                         <Link
                           className="decoration-none text-white"
@@ -189,7 +189,7 @@ export default function Footer9() {
             <div className="col-lg-4 col-md-6 order-lg-2 order-1">
               <div>
                 <div className="footer__logo text-white mt-30">
-                  <img src="/img/general/logo-flat.svg" alt="logo" />
+                  <img src="/img/general/logo_white.png" alt="logo" />
                 </div>
                 <p className="text-white mt-20">
                   Elevate your Samsung Frame display with our captivating art
@@ -297,6 +297,13 @@ export default function Footer9() {
                 </Link>
               </div>
             </div> */}
+          </div>
+          <div className="row justify-center py-10 border-top-light mt-10">
+            <div className="col-auto">
+              <div className="footer__bottom_text text-white">
+                © Copyright 2023. Samsung Frame Art
+              </div>
+            </div>
           </div>
         </div>
       </footer>

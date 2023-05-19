@@ -12,7 +12,7 @@ export default function Menu({ navColor }) {
           <ul className="nav js-navList">
             <li className={`${navColor} menu-item-has-children`}>
               <Link href="/">Home</Link>
-              <ul className="nav__submenu">
+              {/* <ul className="nav__submenu">
                 <li className="nav__submenu_item">
                   <Link href="/">Home 1</Link>
                 </li>
@@ -43,7 +43,7 @@ export default function Menu({ navColor }) {
                 <li className="nav__submenu_item">
                   <Link href="/home/home-10">Home 10</Link>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             {/* <li className={`${navColor} menu-item-has-children`}> */}
             {/* <Link href="/#">Details</Link>

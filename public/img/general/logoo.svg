@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 19.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a3454;
+        font-family: NimbusSanL-Bol, 'Nimbus Sans L';
+        font-size: 6px;
+      }
+
+      .cls-2 {
+        fill: #f9d0b0;
+      }
+
+      .cls-3 {
+        letter-spacing: .02em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        fill: #f86b45;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(20.17 12.73)"><tspan class="cls-4" x="0" y="0">S</tspan><tspan x="4.04" y="0">amsu</tspan><tspan class="cls-6" x="19.71" y="0">n</tspan><tspan x="23.36" y="0">g </tspan><tspan class="cls-5" x="28.7" y="0">F</tspan><tspan class="cls-7" x="32.2" y="0">r</tspan><tspan x="34.57" y="0">ame A</tspan><tspan class="cls-3" x="52.57" y="0">r</tspan><tspan x="55.03" y="0">t</tspan></text>
+  <path class="cls-8" d="M5.86,16.76c-.14-.1-.28-.2-.42-.3-3.76-2.69-3.33-2.74-3.38-7.39,.04-4.41,1.03-3.9,4.59-5.69,.01,1.45,.03,2.9,.04,4.36-.25,.14-.65,.41-.9,.88-.28,.52-.25,1.04-.24,1.26,.06,1.05,.15,3.54,.3,6.88Z"/>
+  <path class="cls-8" d="M17.04,11.07c-.04,4.36-1.06,3.91-4.59,5.69,0-.16-.02-2.02-.02-2.18,0-.1-.02-1.67-.02-1.77,.23-.17,.57-.47,.81-.94,.28-.56,.27-1.09,.27-1.35-.09-3.43-.25-7.13-.25-7.13,4.2,2.98,3.75,2.53,3.8,7.69Z"/>
+  <rect class="cls-2" x="6.15" y="7.84" width="6.95" height="4.67" rx="1.62" ry="1.62"/>
+</svg>

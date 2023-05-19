@@ -36,7 +36,7 @@ export default function MenuMobile({ navToggled }) {
                 : null
             }
           >
-            <Link href="#">Home</Link>
+            <Link href="/">Home</Link>
           </div>
 
           <ul
@@ -49,7 +49,7 @@ export default function MenuMobile({ navToggled }) {
                 navToggledMobileSubmenu.key == 1 ? "submenu-open" : ""
               }`}
             >
-              <Link href="#">
+              <Link href="/">
                 Home
                 <div
                   className="submenu-expand"
@@ -184,7 +184,7 @@ export default function MenuMobile({ navToggled }) {
                 navToggledMobileSubmenu.key == 3 ? "submenu-open" : ""
               }`}
             >
-              <Link href="/portfolio/portfolio-list-6">
+              <Link href="/art">
                 Gallery
                 {/* <div
                   className="submenu-expand"

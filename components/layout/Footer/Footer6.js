@@ -11,7 +11,7 @@ export default function Footer6() {
               <div className="col-lg-4 col-sm-6">
                 <div className="footer__item">
                   <div className="footer__logo  text-white">
-                    <img src="/img/general/logo-flat.svg" alt="logo" />
+                    <img src="/img/general/logo_white.png" alt="logo" />
                   </div>
                   {/* <div className="y-gap-32 pt-30">
                                         <div className="">
@@ -38,27 +38,45 @@ export default function Footer6() {
                   </h3>
                   <div className="footer__content y-gap-10 mt-40">
                     <div className="footer__content__item">
-                      <Link className="decoration-none text-white" href="/">
+                      <Link
+                        className="decoration-none text-white"
+                        href={{
+                          pathname: "/art",
+                          query: { category: "all" },
+                        }}
+                      >
                         All Art
                       </Link>
                     </div>
                     <div className="footer__content__item">
                       <Link
                         className="decoration-none text-white"
-                        href="/about/about-1"
+                        href={{
+                          pathname: "/art",
+                          query: { category: 0 },
+                        }}
                       >
                         Abstract
                       </Link>
                     </div>
                     <div className="footer__content__item">
-                      <Link className="decoration-none text-white" href="faq">
+                      <Link
+                        className="decoration-none text-white"
+                        href={{
+                          pathname: "/art",
+                          query: { category: 1 },
+                        }}
+                      >
                         Photography
                       </Link>
                     </div>
                     <div className="footer__content__item">
                       <Link
                         className="decoration-none text-white"
-                        href="shop-list"
+                        href={{
+                          pathname: "/art",
+                          query: { category: 2 },
+                        }}
                       >
                         Nature
                       </Link>
@@ -66,7 +84,10 @@ export default function Footer6() {
                     <div className="footer__content__item">
                       <Link
                         className="decoration-none text-white"
-                        href="/services/services-1"
+                        href={{
+                          pathname: "/art",
+                          query: { category: 3 },
+                        }}
                       >
                         AI Art
                       </Link>
@@ -74,7 +95,10 @@ export default function Footer6() {
                     <div className="footer__content__item">
                       <Link
                         className="decoration-none text-white"
-                        href="pricing"
+                        href={{
+                          pathname: "/art",
+                          query: { category: 4 },
+                        }}
                       >
                         Classics
                       </Link>
@@ -82,7 +106,10 @@ export default function Footer6() {
                     <div className="footer__content__item">
                       <Link
                         className="decoration-none text-white"
-                        href="/contact/contact-1"
+                        href={{
+                          pathname: "/art",
+                          query: { category: 5 },
+                        }}
                       >
                         African Art
                       </Link>

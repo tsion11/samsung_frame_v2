@@ -26,17 +26,17 @@ export default function Header9({
                   <Link className="base-logo" href="/">
                     <img
                       className="base-logo-first"
-                      src="/img/general/logo.svg"
+                      src="/img/general/logo.png"
                       alt="logo"
                     />
                     <img
                       className="base-logo-second"
-                      src="/img/general/logo-dark.svg"
+                      src="/img/general/logo.png"
                       alt="logo"
                     />
                   </Link>
                   <Link className="menu-logo" href="/">
-                    <img src="/img/general/logo-dark.svg" alt="logo" />
+                    <img src="/img/general/logo.png" alt="logo" />
                   </Link>
                 </div>
                 <div className="ml-64">

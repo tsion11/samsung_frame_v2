@@ -7,27 +7,27 @@ export default function FeatureNine() {
       <section className="layout-pt-lg layout-pb-lg">
         <div className="container">
           <div className="row y-gap-48 justify-between items-center">
-            <div className="col-xl-7 col-lg-7">
+            <div className="col-xl-7 col-lg-5">
               <div className="atropos -no-shadow js-atropos">
                 <div className="atropos-scale">
                   <div className="atropos-rotate">
                     <div className="atropos-inner">
                       <div className="image-group -type-2">
                         <img
-                          data-atropos-offset={-5}
-                          src="/img/about-1/about/pattern.png"
-                          alt="image"
-                        />
-                        <img
                           data-atropos-offset={0}
-                          className="shadow-card"
-                          src="/img/about-5/about/i.jpg"
+                          src="/img/about-1/about/pattern.png"
                           alt="image"
                         />
                         <img
                           data-atropos-offset={5}
                           className="shadow-card"
-                          src="/img/about-5/about/b.jpg"
+                          src="/img/about-5/about/images1.png"
+                          alt="image"
+                        />
+                        <img
+                          data-atropos-offset={5}
+                          className="shadow-card"
+                          src="/img/about-5/about/images2.png"
                           alt="image"
                         />
                       </div>
