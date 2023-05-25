@@ -40,7 +40,7 @@ export default function Contact1() {
           <section className="layout-pt-lg layout-pb-sm">
             <div className="container">
               <div className="row g-0 y-gap-48 row-dividers-dark">
-                <div className="col-lg-4 col-sm-6">
+                {/* <div className="col-lg-4 col-sm-6">
                   <div className="d-flex direction-column text-center px-48">
                     <h3 className="text-22 fw-600">London</h3>
                     <p className="mt-16">
@@ -60,8 +60,8 @@ export default function Contact1() {
                       Open Google Map
                     </a>
                   </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
+                </div> */}
+                {/* <div className="col-lg-4 col-sm-6">
                   <div className="d-flex direction-column text-center px-48">
                     <h3 className="text-22 fw-600">New York</h3>
                     <p className="mt-16">
@@ -81,8 +81,8 @@ export default function Contact1() {
                       Open Google Map
                     </a>
                   </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
+                </div> */}
+                {/* <div className="col-lg-4 col-sm-6">
                   <div className="d-flex direction-column text-center px-48">
                     <h3 className="text-22 fw-600">Istanbul</h3>
                     <p className="mt-16">
@@ -102,7 +102,7 @@ export default function Contact1() {
                       Open Google Map
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
