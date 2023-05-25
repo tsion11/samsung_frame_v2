@@ -117,7 +117,7 @@ export default function Footer6() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              {/* <div className="col-lg-3 col-sm-6">
                 <div className="footer__item">
                   <h3 className="footer__title text-xl lh-1 fw-600 text-white">
                     Legal
@@ -145,10 +145,10 @@ export default function Footer6() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-lg-1 col-sm-6">
                 <div className="y-gap-48">
-                  <div className="footer__socials">
+                  {/* <div className="footer__socials">
                     <h3 className="text-xl lh-1 fw-600 text-white">
                       Follow Us
                     </h3>
@@ -174,7 +174,7 @@ export default function Footer6() {
                         </Link>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* <div>
                     <h3 className="footer__title text-xl lh-1 fw-600 text-white">
                       Subscribe
@@ -212,7 +212,93 @@ export default function Footer6() {
                 </div>
               </div>
             </div>
-            <div className="row justify-center py-30 border-top-light mt-120 md:mt-60">
+            <div className="row mt-60 pt-48 justify-center mb-10">
+              <div className="col-auto">
+                <div className="text-white">
+                  <Link
+                    className="decoration-none text-white"
+                    href="https://redchip.art/"
+                    target="_blank"
+                  >
+                    NFT Artist Database
+                  </Link>
+                </div>
+              </div>
+              <div className="col-auto">
+                <div className="text-white">
+                  <p className="text-white">|</p>
+                </div>
+              </div>
+              <div className="col-auto">
+                <div className="text-white">
+                  <Link
+                    className="decoration-none text-white"
+                    href="https://metacryptopia.io/"
+                    target="_blank"
+                  >
+                    Crypto News
+                  </Link>
+                </div>
+              </div>
+              <div className="col-auto">
+                <div className="text-white">
+                  <p className="text-white">|</p>
+                </div>
+              </div>
+              <div className="col-auto">
+                <div className="text-white">
+                  <Link
+                    className="decoration-none text-white"
+                    href="https://makenftreceipt.com/"
+                    target="_blank"
+                  >
+                    NFT Receipt Generator
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="row y-gap-48 justify-center">
+              <div className="col-auto">
+                <div className="text-white">
+                  <Link
+                    className="decoration-none text-white"
+                    href="https://mastr.ai/"
+                    target="_blank"
+                  >
+                    AI Certification Courses
+                  </Link>
+                </div>
+              </div>
+              <div className="col-auto">
+                <div className="text-white">
+                  <p className="text-white">|</p>
+                </div>
+              </div>
+              <div className="col-auto">
+                <div className="text-white">
+                  <Link
+                    className="decoration-none text-white"
+                    href="https://dij.art/digital-art-curation-advising.html"
+                    target="_blank"
+                  >
+                    Digital Art Curation
+                  </Link>
+                </div>
+              </div>
+              {/* <div className="col-auto">
+              <div className="text-white">
+                <p className="text-white">|</p>
+              </div>
+            </div> */}
+              {/* <div className="col-auto">
+              <div className="text-white">
+                <Link className="decoration-none text-white" href="/">
+                  NFT Receipt Generator
+                </Link>
+              </div>
+            </div> */}
+            </div>
+            <div className="row justify-center py-30 border-top-light mt-10 md:mt-60">
               <div className="col-auto">
                 <div className="footer__bottom_text text-white">
                   © Copyright 2023. Samsung Frame Art

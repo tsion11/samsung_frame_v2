@@ -111,11 +111,11 @@ export default function Footer9() {
                 </div>
                 <div className="col-lg-4 col-sm-6">
                   <div className="footer__item">
-                    <h3 className="footer__title text-white text-xl lh-1 fw-600">
+                    {/* <h3 className="footer__title text-white text-xl lh-1 fw-600">
                       Legal
                     </h3>
-                    <div className="footer__content y-gap-10 mt-40">
-                      {/* <div className="footer__content__item">
+                    <div className="footer__content y-gap-10 mt-40"> */}
+                    {/* <div className="footer__content__item">
                         <Link
                           className="decoration-none text-white"
                           href="terms"
@@ -123,7 +123,7 @@ export default function Footer9() {
                           Twitter
                         </Link>
                       </div> */}
-                      <div className="footer__content__item">
+                    {/* <div className="footer__content__item">
                         <Link
                           className="decoration-none text-white"
                           href="terms"
@@ -147,21 +147,21 @@ export default function Footer9() {
                           Coolie policy
                         </Link>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-lg-2 col-sm-8">
-                  <div className="footer__item">
+                  {/* <div className="footer__item">
                     <h3 className="footer__title text-white text-xl lh-1 fw-600">
                       Social
                     </h3>
-                    <div className="footer__content y-gap-10 mt-40">
-                      {/* <div className="footer__content__item">
+                    <div className="footer__content y-gap-10 mt-40"> */}
+                  {/* <div className="footer__content__item">
                         <Link className="decoration-none text-white" href="#">
                           Linkedin
                         </Link>
                       </div> */}
-                      <div className="footer__content__item">
+                  {/* <div className="footer__content__item">
                         <Link className="decoration-none text-white" href="#">
                           Twitter
                         </Link>
@@ -175,14 +175,14 @@ export default function Footer9() {
                         <Link className="decoration-none text-white" href="#">
                           Instagram
                         </Link>
-                      </div>
-                      {/* <div className="footer__content__item">
+                      </div> */}
+                  {/* <div className="footer__content__item">
                         <Link className="decoration-none text-white" href="#">
                           Pinterest
                         </Link>
                       </div> */}
-                    </div>
-                  </div>
+                  {/* </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -217,12 +217,13 @@ export default function Footer9() {
               </div>
             </div>
           </div>
-          <div className="row mt-60 pt-48 justify-center">
+          <div className="row mt-60 pt-48 justify-center mb-10">
             <div className="col-auto">
               <div className="text-white">
                 <Link
                   className="decoration-none text-white"
                   href="https://redchip.art/"
+                  target="_blank"
                 >
                   NFT Artist Database
                 </Link>
@@ -238,6 +239,7 @@ export default function Footer9() {
                 <Link
                   className="decoration-none text-white"
                   href="https://metacryptopia.io/"
+                  target="_blank"
                 >
                   Crypto News
                 </Link>
@@ -253,18 +255,20 @@ export default function Footer9() {
                 <Link
                   className="decoration-none text-white"
                   href="https://makenftreceipt.com/"
+                  target="_blank"
                 >
                   NFT Receipt Generator
                 </Link>
               </div>
             </div>
           </div>
-          <div className="row y-gap-48 justify-center">
+          <div className="row y-gap-48 justify-center ">
             <div className="col-auto">
               <div className="text-white">
                 <Link
                   className="decoration-none text-white"
                   href="https://mastr.ai/"
+                  target="_blank"
                 >
                   AI Certification Courses
                 </Link>
@@ -280,6 +284,7 @@ export default function Footer9() {
                 <Link
                   className="decoration-none text-white"
                   href="https://dij.art/digital-art-curation-advising.html"
+                  target="_blank"
                 >
                   Digital Art Curation
                 </Link>

@@ -69,7 +69,7 @@ export default function Header9({
                     }`}
                     onClick={navHandle}
                   >
-                    <Icon.Menu className="text-black size-32 str-width-1" />
+                    <Icon.Menu className="text-white size-32 str-width-1" />
                   </button>
                   <button
                     type="button"
