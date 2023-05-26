@@ -37,9 +37,18 @@ export default function Contact1() {
               </div>
             </div>
           </section>
-          <section className="layout-pt-lg layout-pb-sm">
+          <section className="layout-pt-lg layout-pb-sm mt-0">
             <div className="container">
               <div className="row g-0 y-gap-48 row-dividers-dark">
+                <div className="px-20">
+                  <p className=" text-center ">
+                    Feel free to reach out to us with any questions :
+                  </p>
+                  <p className=" text-center sectionHeading__title">
+                    help (at) samsungframe.art
+                  </p>
+                </div>
+
                 {/* <div className="col-lg-4 col-sm-6">
                   <div className="d-flex direction-column text-center px-48">
                     <h3 className="text-22 fw-600">London</h3>

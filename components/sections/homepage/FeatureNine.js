@@ -39,13 +39,14 @@ export default function FeatureNine() {
             <div className="col-xl-4 col-lg-5">
               <div className="wow animate__animated animate__fadeIn">
                 <div className="sectionHeading ">
-                  <h2 className="sectionHeading__title">Samsung Frame Tv</h2>
+                  <h2 className="sectionHeading__title">Samsung Frame TV</h2>
                   <p className="sectionHeading__text mt-20">
-                    Our art for Samsung The Frame comes as a convenient digital
-                    download. Unlike other sellers of art for Samsung's The
-                    Frame TV, we provide four files for your ultimate
-                    convenience.No matter the type of Samsung The Frame TV -
-                    we've got you.
+                    Immerse yourself in the captivating world of art for Samsung
+                    The Frame with our remarkable digital downloads. Setting us
+                    apart from other art sellers for Samsung's The Frame TV, we
+                    go above and beyond by offering four files tailored to your
+                    ultimate convenience. Regardless of the model of your
+                    Samsung The Frame TV, we've got you covered.
                   </p>
                 </div>
               </div>
@@ -54,19 +55,25 @@ export default function FeatureNine() {
                   <div className="size-32 rounded-full bg-light-3 mr-12 d-flex justify-center items-center">
                     <Icon.Check className="icon size-14 text-black" />
                   </div>
-                  <h5 className="text-lg fw-600">Four different sizes</h5>
+                  <h5 className="text-lg fw-600">
+                    Four different sizes: HD, 4K, 8K, and print version.
+                  </h5>
                 </div>
                 <div className="d-flex items-center">
                   <div className="size-32 rounded-full bg-light-3 mr-12 d-flex justify-center items-center">
                     <Icon.Check className="icon size-14 text-black" />
                   </div>
-                  <h5 className="text-lg fw-600">Easy download</h5>
+                  <h5 className="text-lg fw-600">
+                    Effortless art downloads for your purchases.
+                  </h5>
                 </div>
                 <div className="d-flex items-center">
                   <div className="size-32 rounded-full bg-light-3 mr-12 d-flex justify-center items-center">
                     <Icon.Check className="icon size-14 text-black" />
                   </div>
-                  <h5 className="text-lg fw-600">Detailed instructions</h5>
+                  <h5 className="text-lg fw-600">
+                    Detailed art instructions for an enhanced experience.
+                  </h5>
                 </div>
                 <div className="d-flex items-center">
                   <div className="size-32 rounded-full bg-light-3 mr-12 d-flex justify-center items-center">
