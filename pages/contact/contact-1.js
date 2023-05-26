@@ -26,18 +26,26 @@ export default function Contact1() {
                     <h1 className="page-header__title lh-14">Contact us</h1>
                   </div>
                 </div>
-                <div className="col-xl-4 col-lg-9 col-md-10">
+                <div className="px-20">
+                  <p className=" text-center ">
+                    Feel free to reach out to us with any questions :
+                  </p>
+                  <p className=" text-center sectionHeading__title">
+                    help (at) samsungframe.art
+                  </p>
+                </div>
+                {/* <div className="col-xl-4 col-lg-9 col-md-10">
                   <div className="px-20">
                     <p className="page-header__text">
                       With we want to optimize the customization process so your
                       team can save time when building websites.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
-          <section className="layout-pt-lg layout-pb-sm mt-0">
+          {/* <section className="layout-pt-lg layout-pb-sm mt-0">
             <div className="container">
               <div className="row g-0 y-gap-48 row-dividers-dark">
                 <div className="px-20">
@@ -47,7 +55,7 @@ export default function Contact1() {
                   <p className=" text-center sectionHeading__title">
                     help (at) samsungframe.art
                   </p>
-                </div>
+                </div> */}
 
                 {/* <div className="col-lg-4 col-sm-6">
                   <div className="d-flex direction-column text-center px-48">
@@ -112,9 +120,9 @@ export default function Contact1() {
                     </a>
                   </div>
                 </div> */}
-              </div>
+              {/* </div>
             </div>
-          </section>
+          </section> */}
           {/* <section className="layout-pt-sm layout-pb-lg">
             <div className="container">
               <div className="row justify-center text-center">
