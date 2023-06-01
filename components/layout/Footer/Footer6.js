@@ -38,7 +38,7 @@ export default function Footer6() {
                   </h3>
                   <div className="footer__content y-gap-10 mt-40">
                     <div className="footer__content__item">
-                      <Link
+                      {/* <Link
                         className="decoration-none text-white"
                         href={{
                           pathname: "/art",
@@ -46,7 +46,7 @@ export default function Footer6() {
                         }}
                       >
                         All Art
-                      </Link>
+                      </Link> */}
                     </div>
                     <div className="footer__content__item">
                       <Link

@@ -15,7 +15,7 @@ export default function Art({ data, loading }) {
       console.log(router.query);
       setFilterKey(parseInt(router.query.category));
     }
-  }, []);
+  }, [router]);
   // useEffect(() => {
   //   setTimeout(() => {
   //     isotope.current = new Isotope(".works-row", {
